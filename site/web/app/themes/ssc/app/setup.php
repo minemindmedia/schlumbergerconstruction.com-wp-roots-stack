@@ -131,3 +131,20 @@ add_action('after_setup_theme', function () {
         return "<?= " . __NAMESPACE__ . "\\asset_path({$asset}); ?>";
     });
 });
+
+
+/**
+ * Image Sizes
+ */
+add_image_size('hero', 1920, 1280, true);
+
+/**
+ * Add logo to customizer
+ */
+add_theme_support( 'custom-logo', array(
+	'height'      => 100,
+	'width'       => 400,
+	'flex-height' => true,
+	'flex-width'  => true,
+	'header-text' => array( 'site-title', 'site-description' ),
+) );

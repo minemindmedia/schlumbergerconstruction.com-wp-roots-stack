@@ -77,6 +77,8 @@
     "yargs": "~11.0.0"
   },
   "dependencies": {
+    "alpinejs": "^2.3.3",
+    "flickity": "^2.2.1",
     "include-media": "^1.4.9",
     "jquery": "^3.3.1"
   }

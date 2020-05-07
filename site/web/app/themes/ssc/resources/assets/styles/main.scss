@@ -23,6 +23,8 @@
  */
 @tailwind components;
 
+@import "~flickity/css/flickity.css";
+
 /** Import theme styles */
 @import "components/buttons";
 @import "components/comments";

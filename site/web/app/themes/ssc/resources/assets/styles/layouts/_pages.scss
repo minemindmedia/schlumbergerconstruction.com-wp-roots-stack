@@ -1,0 +1,22 @@
+.carousel {
+  background: #fafafa;
+}
+
+.carousel-cell {
+  width: 100%;
+  background: #333;
+}
+
+.carousel-cell-image {
+  display: block;
+  max-height: 100%;
+  margin: 0 auto;
+  max-width: 100%;
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+
+.carousel-cell-image.flickity-lazyloaded,
+.carousel-cell-image.flickity-lazyerror {
+  opacity: 1;
+}

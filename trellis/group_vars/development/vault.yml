@@ -8,3 +8,4 @@ vault_wordpress_sites:
     admin_password: "password"
     env:
       db_password: "password"
+      plugin_acf_key: "b3JkZXJfaWQ9NjQxOTh8dHlwZT1kZXZlbG9wZXJ8ZGF0ZT0yMDE1LTA5LTE1IDAwOjMzOjIz"
