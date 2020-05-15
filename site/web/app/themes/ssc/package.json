@@ -80,6 +80,8 @@
     "alpinejs": "^2.3.3",
     "flickity": "^2.2.1",
     "include-media": "^1.4.9",
-    "jquery": "^3.3.1"
+    "jquery": "^3.3.1",
+    "lozad": "^1.14.0",
+    "slick-carousel": "^1.8.1"
   }
 }

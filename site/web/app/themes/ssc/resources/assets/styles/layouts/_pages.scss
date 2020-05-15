@@ -1,22 +1,129 @@
 .carousel {
   background: #fafafa;
-}
-
-.carousel-cell {
   width: 100%;
-  background: #333;
+
+  .carousel-cell {
+    width: 100%;
+  }
+
+  .carousel-cell-image {
+    display: block;
+    max-height: 100%;
+    margin: 0 auto;
+    max-width: 100%;
+    opacity: 0;
+    transition: opacity 0.4s;
+  }
+
+  .carousel-cell-image.flickity-lazyloaded,
+  .carousel-cell-image.flickity-lazyerror {
+    opacity: 1;
+  }
 }
 
-.carousel-cell-image {
-  display: block;
-  max-height: 100%;
-  margin: 0 auto;
-  max-width: 100%;
-  opacity: 0;
-  transition: opacity 0.4s;
+/*
+.featured {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  div {
+    flex: 0 50%;
+
+    @include media(">phone", "<=tablet") {
+      flex: 0 100%;
+    }
+  }
+}
+*/
+
+/* Single Portfolio */
+
+.slick-slider {
+  .slick-prev,
+  .slick-next {
+    position: absolute;
+    bottom: 0;
+    z-index: 9;
+  }
+
+  .slick-next {
+    position: absolute;
+    right: 0;
+    font-size: 0;
+
+    &::after {
+      content: "";
+      width: 45px;
+      height: 45px;
+      background: url(../images/arrow-next.svg);
+      background-repeat: no-repeat;
+      top: -100px;
+      right: 7px;
+      position: absolute;
+
+      @media (min-width: 1024px) {
+        right: 34px;
+      }
+    }
+  }
+
+  .slick-prev {
+    position: absolute;
+    left: 0;
+    font-size: 0;
+
+    &::after {
+      content: "";
+      width: 50px;
+      height: 50px;
+      background: url(../images/arrow-prev.svg);
+      background-repeat: no-repeat;
+      top: -100px;
+      left: 7px;
+      position: absolute;
+
+      @media (min-width: 1024px) {
+        left: 34px;
+      }
+    }
+  }
+
+  .slick-track {
+    img {
+      width: auto;
+      height: 300px;
+      outline: none;
+
+      @media (min-width: 640px) {
+        width: auto;
+        height: 450px;
+      }
+
+      @media (min-width: 768px) {
+        width: auto;
+        height: 550px;
+      }
+
+      @media (min-width: 1024px) {
+        width: auto;
+        height: 800px;
+      }
+
+      @media (min-width: 1280px) {
+        width: auto;
+        height: 100vh;
+      }
+    }
+
+    img.slick-slide {
+      opacity: 0.2;
+    }
+
+    img.slick-active {
+      opacity: 1;
+    }
+  }
 }
 
-.carousel-cell-image.flickity-lazyloaded,
-.carousel-cell-image.flickity-lazyerror {
-  opacity: 1;
-}

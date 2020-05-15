@@ -49,8 +49,8 @@ const globalStyles = ({ addBase, config }) => {
 module.exports = {
   theme: {
     colors: {
-      primary: '#7a7a75',
-      secondary: 'rgba(122,122,117, 0.8)',
+      primary: 'rgba(122,122,117, 0.85)',
+      secondary: 'rgba(122,122,117, 0.65)',
       white: '#fff',
       gray: {
         100: '#f7fafc',
@@ -72,6 +72,11 @@ module.exports = {
       center: true,
       padding: '1rem',
     },
+    inset: {
+      '0': 0,
+      auto: 'auto',
+      '1/2': '50%',
+    },
     extend: {
       height: theme => ({
         "52": "120px",
@@ -86,6 +91,11 @@ module.exports = {
       padding: theme => ({
         "20": "48px",
         "52": "120px",
+      }),
+      backgroundOpacity: theme => ({
+        '10': '0.1',
+        '20': '0.2',
+        '75': '0.75',
       }),
     },
   },

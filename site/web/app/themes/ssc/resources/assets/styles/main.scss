@@ -5,6 +5,7 @@
 @tailwind base;
 
 /** Import variables */
+@import "common/global";
 @import "common/variables";
 
 /** Import everything from autoload */
@@ -24,6 +25,8 @@
 @tailwind components;
 
 @import "~flickity/css/flickity.css";
+@import "~include-media/dist/_include-media.scss";
+@import "~slick-carousel/slick/slick.css";
 
 /** Import theme styles */
 @import "components/buttons";

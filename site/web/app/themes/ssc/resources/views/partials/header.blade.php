@@ -3,7 +3,7 @@
         $custom_logo_id = get_theme_mod( 'custom_logo' );
         $image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
     @endphp
-    <div class="h-52 w-full pr-6">
+    <div class="h-52 w-full md:pr-6">
         <div
             x-data="{ 'isDialogOpen': false }"
             @keydown.escape="isDialogOpen = false"
@@ -22,7 +22,7 @@
                     x-show="isHamburgerOpen"
                     x-cloak
                     @click.away="isHamburgerOpen = false"
-                    class="absolute right-0 w-menu h-screen bg-secondary text-white list-none text-right pt-48"
+                    class="absolute right-0 w-menu h-screen bg-primary text-white list-none text-right pt-48"
                     style="z-index: -100"
                 >
                     {!! wp_nav_menu([
@@ -34,7 +34,7 @@
             </div>
         </div>
         <a class="brand" href="{{ home_url('/') }}">
-            <img src="{{ $image[0] }}" class="float-right h-52 p-6 object-right object-fill">
+            <img data-src="{{ $image[0] }}" class="lozad md:float-right h-20 md:h-52 pt-8 pl-8 md:p-6 object-right object-fill">
         </a>
     </div>   
 </header>

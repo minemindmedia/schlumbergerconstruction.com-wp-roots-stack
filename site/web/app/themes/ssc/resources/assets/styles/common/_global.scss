@@ -1,1 +1,29 @@
-// Global styles are set in the Tailwind config using a plugin
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #7a7a75;
+}
+
+.flickity-page-dots {
+  bottom: -50px !important;
+}
+
+.flickity-page-dots .dot {
+  width: 7px !important;
+  height: 7px !important;
+  background: rgba(122, 122, 117, 0.85) !important;
+}
+
