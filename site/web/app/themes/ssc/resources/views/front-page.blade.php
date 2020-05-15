@@ -39,7 +39,7 @@
         </div>
     @endforeach    
 </div>
-<div class="w-full md:w-2/3 mx-auto border-t-2 border-b-2 border-black mb-20">
+<div class="w-full md:w-2/3 mx-auto border-t-2 border-b-2 border-black mb-20 pb-20">
     <div class="flex items-center h-full ">
         <div class="flex-1 my-20">
             <div class="carousel mx-auto  bg-transparent pb-20" data-flickity='{ "prevNextButtons": false, "adaptiveHeight": true, "wrapAround": true }'>
@@ -54,11 +54,8 @@
         </div>
     </div>
 </div>
-
-
-
 <div class="w-full md:w-2/3 mx-auto mb-32">
-    <div class="carousel bg-transparent" data-flickity='{ "prevNextButtons": false, "adaptiveHeight": true, "wrapAround": true }'>
+    <div class="carousel bg-transparent" data-flickity='{ "prevNextButtons": false, "adaptiveHeight": true, "wrapAround": true, "autoPlay": true }'>
         @foreach($awards as $award)
             <div class="carousel-cell">
                 <div class="flex items-center px-64">
