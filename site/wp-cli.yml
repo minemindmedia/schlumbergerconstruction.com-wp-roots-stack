@@ -1,10 +1,11 @@
 path: web/wp
-server:
-  docroot: web
 
 @development:
   ssh: vagrant@trellis.ssc.build/srv/www/schlumbergerconstruction.com/current
 @staging:
-  ssh: web@ssc.minemindmedia.com/www/schlumbergerconstruction.com/public/current/web
+  ssh: web@ssc.minemindmedia.com/srv/www/schlumbergerconstruction.com/current
 @production:
-  ssh: web@schlumbergerconstruction.com/www/schlumbergerconstruction.com/public/current/web
+  ssh: web@schlumbergerconstruction.com/srv/www/schlumbergerconstruction.com/current
+
+server:
+  docroot: web
