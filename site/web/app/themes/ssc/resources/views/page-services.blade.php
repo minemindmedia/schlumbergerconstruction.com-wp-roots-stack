@@ -25,7 +25,7 @@
                     </div>
                 @elseif( get_row_layout() == 'image_divider' )
                     @php $image = get_sub_field('image_divider'); @endphp
-                    <img src="{{ $image['sizes']['hero'] }}" alt="" class="w-full">
+                    <img data-src="{{ $image['sizes']['hero'] }}" alt="" class="lozad w-full">
                 @endif
             @endwhile
             @else

@@ -6,5 +6,5 @@
             <img alt="Down Arrow" src="@asset('images/down-arrow.svg')" class="w-2 mt-16" />
         </div>
     </div>
-    <img class="object-cover h-screen w-full" src="{{ $page_header->hero['sizes']['hero'] }}" alt="tulip" />
+    <img class="lozad object-cover h-screen w-full" data-src="{{ $page_header->hero['sizes']['hero'] }}" alt="tulip" />
 </div>
