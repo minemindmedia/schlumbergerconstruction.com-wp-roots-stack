@@ -97,6 +97,14 @@ module.exports = {
         '20': '0.2',
         '75': '0.75',
       }),
+      fontSize: theme => ({
+        '3xl': '27px',
+        '4xl': '33px',
+      }),
+      textColor: theme => ({
+        primary: 'rgba(122,122,117, 0.85)',
+        secondary: 'rgba(122,122,117, 0.65)',
+      }),
     },
   },
   variants: {

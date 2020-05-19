@@ -30,6 +30,5 @@ class FrontPage extends Controller
         }
         return $data;
     }
-
     
 }
