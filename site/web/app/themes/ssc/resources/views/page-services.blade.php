@@ -13,7 +13,7 @@
                         $title = get_sub_field('section_title');
                         $content = get_sub_field('section_content');
                         @endphp
-                        <div class="md:flex">
+                        <div id="go" class="md:flex">
                             <div class="w-full md:w-1/3 text-2xl lg:text-4xl font-normal lg:text-center">
                                 <div class="mx-8 py-16 lg:px-16 lg:py-32">
                                     {{ $title }}
