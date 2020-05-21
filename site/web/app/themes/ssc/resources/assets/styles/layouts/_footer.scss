@@ -1,10 +1,4 @@
 footer {
-  p {
-    font-size: 27px;
-    line-height: 46px;
-    color: white;
-  }
-
   form {
     input,
     textarea {
@@ -50,24 +44,6 @@ footer {
       text-transform: uppercase;
       padding: 0 20px;
       float: right;
-    }
-  }
-
-  .contact {
-    p {
-      color: white;
-      line-height: 36px;
-      text-align: right;
-    }
-
-    p.address {
-      font-size: 23px;
-      line-height: 32px;
-    }
-
-    p.copyright {
-      font-size: 23px;
-      margin-top: 64px;
     }
   }
 }
