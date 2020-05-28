@@ -70,6 +70,13 @@
                 "operator": "==",
                 "value": "page"
             }
+        ],
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "options_portfolio"
+            }
         ]
     ],
     "menu_order": 1,
@@ -94,5 +101,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1589920852
+    "modified": 1590694376
 }

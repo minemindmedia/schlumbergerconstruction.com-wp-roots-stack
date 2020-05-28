@@ -99,12 +99,17 @@ module.exports = {
       }),
       fontSize: theme => ({
         '2xl': '20px',
+        '2.5xl': '23px',
         '3xl': '27px',
         '4xl': '33px',
       }),
       textColor: theme => ({
         primary: 'rgba(122,122,117, 0.85)',
         secondary: 'rgba(122,122,117, 0.65)',
+      }),
+      order: theme => ({
+        2: '2',
+        3: '3',
       }),
     },
   },
