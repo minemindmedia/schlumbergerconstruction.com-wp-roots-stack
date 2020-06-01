@@ -127,3 +127,13 @@
   }
 }
 
+// Misc
+
+.overlay {
+  display: none;
+}
+
+.miscellaneous:hover .overlay {
+  display: inline-block;
+}
+

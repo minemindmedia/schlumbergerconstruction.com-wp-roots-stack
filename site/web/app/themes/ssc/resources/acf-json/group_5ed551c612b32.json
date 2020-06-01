@@ -1,26 +1,30 @@
 {
-    "key": "group_5ec44375b2cf2",
-    "title": "Page Header",
+    "key": "group_5ed551c612b32",
+    "title": "Miscellaneous",
     "fields": [
         {
-            "key": "field_5ec4443a8824d",
-            "label": "Page Header",
-            "name": "page_header",
-            "type": "group",
+            "key": "field_5ed551f3dcd04",
+            "label": "Miscellaneous Gallery",
+            "name": "misc_gallery",
+            "type": "repeater",
             "instructions": "",
-            "required": 0,
+            "required": 1,
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
                 "class": "",
                 "id": ""
             },
-            "layout": "block",
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "",
             "sub_fields": [
                 {
-                    "key": "field_5ec4438cc3470",
-                    "label": "Hero Image",
-                    "name": "hero_image",
+                    "key": "field_5ed55279d2e7c",
+                    "label": "Project Photo",
+                    "name": "photo",
                     "type": "image",
                     "instructions": "",
                     "required": 1,
@@ -30,8 +34,8 @@
                         "class": "",
                         "id": ""
                     },
-                    "return_format": "array",
-                    "preview_size": "full",
+                    "return_format": "url",
+                    "preview_size": "medium",
                     "library": "all",
                     "min_width": "",
                     "min_height": "",
@@ -42,10 +46,10 @@
                     "mime_types": ""
                 },
                 {
-                    "key": "field_5ec443c4c3471",
-                    "label": "Page Intro",
-                    "name": "page_intro",
-                    "type": "textarea",
+                    "key": "field_5ed552a1d2e7d",
+                    "label": "Project Name",
+                    "name": "name",
+                    "type": "text",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -56,9 +60,28 @@
                     },
                     "default_value": "",
                     "placeholder": "",
-                    "maxlength": "",
-                    "rows": "",
-                    "new_lines": ""
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5ed552acd2e7e",
+                    "label": "Project Location",
+                    "name": "location",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
                 }
             ]
         }
@@ -66,20 +89,13 @@
     "location": [
         [
             {
-                "param": "post_type",
+                "param": "page",
                 "operator": "==",
-                "value": "page"
-            }
-        ],
-        [
-            {
-                "param": "options_page",
-                "operator": "==",
-                "value": "options_portfolio"
+                "value": "214"
             }
         ]
     ],
-    "menu_order": 1,
+    "menu_order": 2,
     "position": "normal",
     "style": "default",
     "label_placement": "top",
@@ -101,5 +117,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1591038127
+    "modified": 1591044997
 }
