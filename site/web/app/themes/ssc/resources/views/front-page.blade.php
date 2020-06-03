@@ -13,16 +13,10 @@
         </div>
     @endif
 </div>
+
+
 <div class="flex flex-wrap m-20">
-    <div class="w-full md:w-1/2">
-        <div class="flex items-center h-full">
-            <div class="flex-1">
-                <div class="w-4/5 mx-auto">
-                    {!! $intro !!}
-            </div>
-            </div>
-        </div>
-    </div>
+    
     @foreach ($featured as $f)
         <div class="relative w-full md:w-1/2">
             <div class="p-4">
@@ -37,6 +31,16 @@
             </div>
         </div>
     @endforeach    
+
+    <div class="w-full md:w-1/2 order-first">
+        <div class="flex items-center h-full">
+            <div class="flex-1">
+                <div class="w-4/5 mx-auto">
+                    {!! $intro !!}
+            </div>
+            </div>
+        </div>
+    </div>
 </div>
 <div class="w-full md:w-2/3 mx-auto border-t-2 border-b-2 border-black mb-20 pb-20">
     <div class="flex items-center h-full ">

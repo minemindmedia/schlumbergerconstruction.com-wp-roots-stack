@@ -32,4 +32,13 @@ class App extends Controller
         return get_the_title();
     }
 
+    public function pageHeader()
+    {
+        $field = get_field('page_header');
+        return (object) [
+            'hero'     => $field['hero_image'] ?? null,
+            'intro'        => $field['page_intro'] ?? null,
+        ];
+    }
+
 }
