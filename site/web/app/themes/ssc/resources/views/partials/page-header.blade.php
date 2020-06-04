@@ -14,5 +14,5 @@
             </div>
         </div>
     @endif
-    <img class="lozad object-cover h-screen w-full" data-src="{{ $page_header->hero['sizes']['hero'] }}" alt="tulip" />
+    <img class="lozad object-cover h-screen w-full" data-src="{{ $page_header->hero['sizes']['hero'] }}" alt="{{ $page_header->hero['alt'] }}" />
 </div>

@@ -1,8 +1,7 @@
 @extends('layouts.page')
 
 @section('content')
-    @while(have_posts()) @php the_post() @endphp
-    @include('partials.page-header')
+@include('partials.page-header')
         
     @foreach ($our_profile as $profile)
         @if ($profile->block_type == 'content_section_23_-_13')
@@ -44,10 +43,8 @@
         @endif
     @endforeach
 
-
     <h3 class="w-full lg:w-3/5 lg:mx-auto mb-12 lg:mb-32  text-center text-2xl lg:text-4xl">
        {!! $relationship_intro->intro !!}
-       
     </h3> 
 
     @if($our_relationships)
@@ -61,5 +58,4 @@
         </div>
     @endif
         
-    @endwhile
 @endsection

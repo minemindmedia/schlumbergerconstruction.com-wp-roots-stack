@@ -13,10 +13,7 @@
         </div>
     @endif
 </div>
-
-
 <div class="flex flex-wrap m-20">
-    
     @foreach ($featured as $f)
         <div class="relative w-full md:w-1/2">
             <div class="p-4">
@@ -31,7 +28,6 @@
             </div>
         </div>
     @endforeach    
-
     <div class="w-full md:w-1/2 order-first">
         <div class="flex items-center h-full">
             <div class="flex-1">

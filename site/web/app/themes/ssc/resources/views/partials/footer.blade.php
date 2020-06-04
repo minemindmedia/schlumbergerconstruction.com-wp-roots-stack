@@ -10,13 +10,13 @@
         </div>
         <div class="w-full lg:w-1/3 contact">
             <p class="text-xl lg:text-3xl text-white">
-            General Contracting<br>
-            Custom Residential + Commercial
+            {{ get_theme_mod( 'ssc_title' ) }}<br>
+            {{ get_theme_mod( 'ssc_subtitle' ) }}
             </p>
-            <p class="text-xl lg:text-3xl text-white">(970) 925-8360</p>
+            <p class="text-xl lg:text-3xl text-white">{{ get_theme_mod( 'ssc_phone' ) }}</p>
             <p class="text-lg lg:text-2xl text-white">
-            309K Aspen Business Center<br>
-            Aspen, Colorado 81611
+            {{ get_theme_mod( 'ssc_address' ) }}<br>
+            {{ get_theme_mod( 'ssc_city' ) }}, {{ get_theme_mod( 'ssc_state' ) }} {{ get_theme_mod( 'ssc_zip' ) }}
             </p>
             <p class="copyright text-white">© Schlumberger Scherer Construction</p>
         </div>

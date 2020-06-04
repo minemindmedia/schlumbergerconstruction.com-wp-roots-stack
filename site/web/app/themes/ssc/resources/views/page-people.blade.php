@@ -1,8 +1,7 @@
 @extends('layouts.page')
 
 @section('content')
-    @while(have_posts()) @php the_post() @endphp
-    @include('partials.page-header')
+@include('partials.page-header')
 
     @foreach ($our_people as $people)
 
@@ -58,5 +57,4 @@
         </div>
     @endif
         
-    @endwhile
 @endsection

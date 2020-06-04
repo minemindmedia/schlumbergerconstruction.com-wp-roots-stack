@@ -26,6 +26,8 @@ add_action('customize_register', function (\WP_Customize_Manager $wp_customize) 
     ]);
 
     // Setting
+    $wp_customize->add_setting('ssc_title');
+    $wp_customize->add_setting('ssc_subtitle');
     $wp_customize->add_setting('ssc_address');
     $wp_customize->add_setting('ssc_city');
     $wp_customize->add_setting('ssc_state');
@@ -34,6 +36,18 @@ add_action('customize_register', function (\WP_Customize_Manager $wp_customize) 
     $wp_customize->add_setting('ssc_fax');
 
     // Control
+    $wp_customize->add_control('ssc_title',  [
+        'label' => __( 'Title'),
+        'section' => 'ssc_contact',
+        'type' => 'text',
+        'priority' => 10
+    ]);
+    $wp_customize->add_control('ssc_subtitle',  [
+        'label' => __( 'Subtitle'),
+        'section' => 'ssc_contact',
+        'type' => 'text',
+        'priority' => 10
+    ]);
     $wp_customize->add_control('ssc_address',  [
         'label' => __( 'Address'),
         'section' => 'ssc_contact',
