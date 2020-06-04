@@ -4,6 +4,9 @@
 
   .carousel-cell {
     width: 100%;
+    height: 250px;
+    opacity: 0.25;
+    transition: opacity 250ms ease-out;
   }
 
   .carousel-cell-image {
@@ -13,6 +16,19 @@
     max-width: 100%;
     opacity: 0;
     transition: opacity 0.4s;
+    height: 250px;
+
+    &.is-selected {
+      opacity: 1;
+    }
+
+    @include media(">sm", "<850px") {
+      height: 480px;
+    }
+
+    @include media(">=850px", "<lg") {
+      height: 600px;
+    }
   }
 
   .carousel-cell-image.flickity-lazyloaded,
@@ -153,22 +169,22 @@ form {
 
     ::-webkit-input-placeholder { /* WebKit browsers */
       color: #fff !important;
-      opacity: 1 !important;
+      opacity: 1;
     }
 
     ::-moz-placeholder { /* Mozilla Firefox 19+ */
       color: #fff !important;
-      opacity: 1 !important;
+      opacity: 1;
     }
 
     :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
       color: #fff !important;
-      opacity: 1 !important;
+      opacity: 1;
     }
 
     :-ms-input-placeholder { /* Internet Explorer 10+ */
       color: #fff !important;
-      opacity: 1 !important;
+      opacity: 1;
     }
   }
 

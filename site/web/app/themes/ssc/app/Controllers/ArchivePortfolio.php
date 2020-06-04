@@ -28,12 +28,11 @@ class ArchivePortfolio extends Controller
         }, $portfolio_items);
     }
 
-    public function portfolioDetails()
+    public static function portfolioDetails( $id )
     {
-        $field = get_field('portfolio');
+        $field = get_field('portfolio', $id );
         return (object) [
             'location'        => $field['location'] ?? null,
-            'bedrooms'     => $field['bedrooms'] ?? null,
         ];
     }
 
