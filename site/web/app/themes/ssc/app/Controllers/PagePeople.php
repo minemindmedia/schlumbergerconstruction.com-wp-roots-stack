@@ -51,7 +51,6 @@ class PagePeople extends Controller
             return $data;
         }
 
-
         public function ourTeam()
         {
             
