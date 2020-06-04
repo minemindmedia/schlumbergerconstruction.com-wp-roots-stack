@@ -16,7 +16,7 @@ class FrontPage extends Controller
         return get_field( 'intro' );
     }
 
-    public function featured() {
+    public static function featured() {
     global $post;
     $data = [];
     $featured = get_field('featured_portfolios');
