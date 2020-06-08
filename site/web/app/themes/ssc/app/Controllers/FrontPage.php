@@ -19,7 +19,7 @@ class FrontPage extends Controller
     public function featured() {
     global $post;
     $data = [];
-    $featured = get_field('featured_portfolios');
+    $featured = get_field('featured_portfolios', $post->ID);
         foreach ($featured as $f) {
             $this_post = (object) array(
                 'thumbnail' => get_the_post_thumbnail($f, 'hero', array('class' => 'lozad')),

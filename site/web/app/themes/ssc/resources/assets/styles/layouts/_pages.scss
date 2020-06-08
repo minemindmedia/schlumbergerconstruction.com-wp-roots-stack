@@ -1,3 +1,30 @@
+.flex-container {
+  list-style: none;
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: block;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+
+  @include media(">lg") {
+    display: flex;
+  }
+}
+
+.flex-item:nth-of-type(1) { order: 1; }
+.flex-item:nth-of-type(2) { order: 2; }
+.flex-item:nth-of-type(3) { order: 3; }
+.flex-item:nth-of-type(4) { order: 4; }
+
+@include media(">lg") {
+  .flex-item:nth-of-type(1) { order: 2; }
+  .flex-item:nth-of-type(2) { order: 1; }
+}
+
 .carousel {
   background: #fafafa;
   width: 100%;
