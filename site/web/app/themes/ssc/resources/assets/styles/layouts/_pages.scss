@@ -48,6 +48,25 @@
   }
 }
 
+.portfolio-slide {
+  height: 250px;
+  opacity: 0.25;
+  transition: opacity 250ms ease-out;
+  display: none;
+
+  &.is-selected {
+    opacity: 1;
+  }
+
+  @include media(">sm", "<850px") {
+    height: 480px;
+  }
+
+  @include media(">=850px", "<lg") {
+    height: 600px;
+  }
+}
+
 /*
 .featured {
   display: flex;

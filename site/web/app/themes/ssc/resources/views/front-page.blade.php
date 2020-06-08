@@ -4,10 +4,32 @@
 
 <div class="bg-black h-screen w-full">
     @if ( $gallery )
-        <div class="carousel">
+        <div class="carousel"
+        data-flickity='{
+            "wrapAround": true,
+            "lazyLoad": 1,
+            "imagesLoaded": true,
+            "initialIndex": 2,
+            "pageDots": false,
+            "cellSelector": ".property-slide",
+            "arrowShape": {
+              "x0": 0,
+              "x1": 80, "y1": 41,
+              "x2": 90, "y2": 40,
+              "x3": 12
+            }
+          }'
+        >
             @foreach( $gallery as $image )
                 <div class="carousel-cell">
-                    <img class="carousel-cell-image object-cover h-screen w-full" data-flickity-lazyload="{{ $image['sizes']['hero'] }}" alt="tulip" />
+                    <img 
+                    data-flickity-lazyload="{{ $image['sizes']['large'] }}"
+                    data-flickity-lazyload-srcset="
+                        {{ $image['sizes']['hero'] }} 1280w,
+                        {{ $image['sizes']['large'] }} 1024w"
+                    sizes="(min-width: 1024px) 1280px, 1024px"
+                    alt="{{ $image['alt'] }}"
+                    class="carousel-cell-image object-cover h-screen w-full lg:h-screen portfolio-slide" />
                 </div>
             @endforeach
         </div>
@@ -36,7 +58,7 @@
                 </a>
             </div>
         </div>
-    @endforeach    
+    @endforeach  
 </div>
 <div class="w-full md:w-2/3 mx-auto border-t-2 border-b-2 border-black mb-8 lg:mb-20 pb-20">
     <div class="flex items-center h-full ">
@@ -45,8 +67,8 @@
                 @foreach($testimonials as $testimonial)
                     <div class="carousel-cell text-center">
                         <p>{{ $testimonial->testimonial }}</p>
-                        <p>{{ $testimonial->title }}</p>
-                        <p>{{ $testimonial->subtitle }}</p>
+                        <p>{{ $testimonial->title }}<br>
+                        {{ $testimonial->subtitle }}</p>
                     </div>
                 @endforeach
             </div>

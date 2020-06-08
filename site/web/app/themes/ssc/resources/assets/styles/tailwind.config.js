@@ -98,6 +98,7 @@ module.exports = {
         '75': '0.75',
       }),
       fontSize: theme => ({
+        'md': '16px',
         '2xl': '20px',
         '2.5xl': '23px',
         '3xl': '27px',

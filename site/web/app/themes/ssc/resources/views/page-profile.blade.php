@@ -16,7 +16,7 @@
                         <div class="flex-1 text-center px-8">
                             
                             <h3 class="text-2xl lg:text-4xl mb-8 lg:mb-16">{{ $profile->title }}</h3>
-                            <div class="text-lg lg:text-2xl">{!! $profile->content !!}</div>
+                            <div class="text-md lg:text-2xl">{!! $profile->content !!}</div>
                         </div>
                     </div>
                 </div>
@@ -33,7 +33,7 @@
                         <div class="flex-1 text-center px-8">
                             
                             <h3 class="text-2xl lg:text-4xl mb-8 lg:mb-16">{{ $profile->title }}</h3>
-                            <div class="text-lg lg:text-2xl">{!! $profile->content !!}</div>
+                            <div class="text-md lg:text-2xl">{!! $profile->content !!}</div>
                         </div>
                     </div>
                 </div>
@@ -43,7 +43,7 @@
         @endif
     @endforeach
 
-    <h3 class="w-full lg:w-3/5 lg:mx-auto mb-12 lg:mb-32  text-center text-2xl lg:text-4xl">
+    <h3 class="w-full lg:w-3/5 px-6 lg:mx-auto mb-12 lg:mb-32  text-center text-lg lg:text-4xl">
        {!! $relationship_intro->intro !!}
     </h3> 
 
@@ -52,7 +52,7 @@
             @foreach($our_relationships as $r)
                 <div class="w-full lg:w-1/3">
                     <h3 class="text-lg lg:text-3xl mb-12 mt-12 lg:mt-0 font-medium">{!! $r['title'] !!}</h3>
-                    <div class="text-lg lg:text-2xl leading-normal">{!! $r['list'] !!}</div>
+                    <div class="text-md lg:text-2xl leading-normal">{!! $r['list'] !!}</div>
                 </div>
             @endforeach
         </div>

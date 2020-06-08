@@ -69,7 +69,7 @@
             "elements": "",
             "min": 3,
             "max": 3,
-            "return_format": "id"
+            "return_format": "object"
         },
         {
             "key": "field_5ebdce17e8613",
@@ -329,5 +329,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1589568610
+    "modified": 1591646122
 }

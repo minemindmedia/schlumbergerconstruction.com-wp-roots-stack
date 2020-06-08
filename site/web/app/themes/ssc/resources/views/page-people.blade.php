@@ -16,7 +16,7 @@
                     <div class="flex items-center h-full">
                         <div class="flex-1 text-center px-8">
                             <h3 class="text-2xl lg:text-4xl mb-8 lg:mb-16">{{ $people->title }}</h3>
-                            <div class="text-lg lg:text-2xl">{!! $people->content !!}</div>
+                            <div class="text-md lg:text-2xl">{!! $people->content !!}</div>
                         </div>
                     </div>
                 </div>
@@ -33,7 +33,7 @@
                         <div class="flex-1 text-center px-8">
                             
                             <h3 class="text-2xl lg:text-4xl mb-8 lg:mb-16">{{ $people->title }}</h3>
-                            <div class="text-lg lg:text-2xl">{!! $people->content !!}</div>
+                            <div class="text-md lg:text-2xl">{!! $people->content !!}</div>
                         </div>
                     </div>
                 </div>
@@ -50,7 +50,7 @@
                 <div class="w-full lg:w-1/3">
                     <div class="w-1/2 mx-auto text-center lg:text-left">
                         <h3 class="text-lg lg:text-3xl mb-12 mt-12 lg:mt-0 font-medium">{!! $t['title'] !!}</h3>
-                        <div class="text-lg lg:text-2xl leading-normal">{!! $t['list'] !!}</div>
+                        <div class="text-md lg:text-2xl leading-normal">{!! $t['list'] !!}</div>
                     </div>
                 </div>
             @endforeach
