@@ -14,7 +14,7 @@
                 </div>
                 <div class="flex-none w-full lg:w-2/3 py-8 lg:py-0 mb-8 lg:mb-0 lg:border-solid lg:border-t-2 lg:border-b-2 lg:border-primary">
                     <div class="flex items-center h-full">
-                        <div class="flex-1 text-center px-8">
+                        <div class="flex-1 text-center md:px-8">
                             <h3 class="text-2xl lg:text-4xl mb-8 lg:mb-16">{{ $people->title }}</h3>
                             <div class="text-md lg:text-2xl">{!! $people->content !!}</div>
                         </div>
@@ -30,7 +30,7 @@
                 </div>
                 <div class="flex-none w-full lg:w-2/3 py-8 lg:py-0 mb-8 lg:mb-0 lg:border-solid lg:border-t-2 lg:border-b-2 lg:border-primary">
                     <div class="flex items-center h-full">
-                        <div class="flex-1 text-center px-8">
+                        <div class="flex-1 text-center md:px-8">
                             
                             <h3 class="text-2xl lg:text-4xl mb-8 lg:mb-16">{{ $people->title }}</h3>
                             <div class="text-md lg:text-2xl">{!! $people->content !!}</div>
@@ -49,7 +49,7 @@
             @foreach($our_team as $t)
                 <div class="w-full lg:w-1/3">
                     <div class="w-1/2 mx-auto text-center lg:text-left">
-                        <h3 class="text-lg lg:text-3xl mb-12 mt-12 lg:mt-0 font-medium">{!! $t['title'] !!}</h3>
+                        <h3 class="text-lg lg:text-3xl mb-7 mt-12 lg:mt-0 font-medium">{!! $t['title'] !!}</h3>
                         <div class="text-md lg:text-2xl leading-normal">{!! $t['list'] !!}</div>
                     </div>
                 </div>

@@ -88,6 +88,9 @@ module.exports = {
       width: theme => ({
         "menu": "518px",
       }),
+      margin: theme => ({
+        "7": "1.75em",
+      }),
       padding: theme => ({
         "20": "48px",
         "52": "120px",

@@ -1,5 +1,5 @@
 @if ( $portfolio->slider )
-    <div class="relative">
+    <div class="relative pt-52 md:pt-0">
         <div class="portfolio-carousel bg-black">
             @foreach( $portfolio->slider as $image )
             <img data-lazy="{{ $image['sizes']['hero'] }}" alt="{{ $image['alt'] }}"/>

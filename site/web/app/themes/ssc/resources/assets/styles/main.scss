@@ -4,9 +4,11 @@
  */
 @tailwind base;
 
+@import "common/variables";
+@import "~include-media/dist/_include-media.scss";
+
 /** Import variables */
 @import "common/global";
-@import "common/variables";
 
 /** Import everything from autoload */
 @import "./autoload/**/*";
@@ -25,7 +27,6 @@
 @tailwind components;
 
 @import "~flickity/css/flickity.css";
-@import "~include-media/dist/_include-media.scss";
 @import "~slick-carousel/slick/slick.css";
 
 /** Import theme styles */

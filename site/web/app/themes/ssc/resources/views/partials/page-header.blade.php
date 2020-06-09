@@ -1,6 +1,6 @@
-<div class="bg-black h-screen w-full">    
+<div class="w-full">    
     @if ( $page_header->intro )
-        <div class="absolute right-0 w-full lg:w-menu h-screen bg-primary pt-48">
+        <div class="absolute right-0 w-full md:w-1/2 lg:w-menu hero bg-primary pt-48">
             <div class="absolute bottom-0 p-8 lg:p-16 pb-16">
                 @if (is_singular())
                 <h1 class="text-white text-2xl lg:text-4xl mb-10">{!! App::title() !!}</h1>
@@ -14,5 +14,5 @@
             </div>
         </div>
     @endif
-    <img class="lozad object-cover h-screen w-full" data-src="{{ $page_header->hero['sizes']['hero'] }}" alt="{{ $page_header->hero['alt'] }}" />
+    <img class="lozad object-cover hero w-full" data-src="{{ $page_header->hero['sizes']['hero'] }}" alt="{{ $page_header->hero['alt'] }}" />
 </div>

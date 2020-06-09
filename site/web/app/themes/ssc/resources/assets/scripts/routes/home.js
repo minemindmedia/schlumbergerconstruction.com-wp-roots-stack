@@ -8,6 +8,12 @@ export default {
       lazyLoad: true,
       contain: true,
       pageDots: false,
+      arrowShape: { 
+        x0: 5,
+        x1: 75, y1: 65,
+        x2: 63, y2: 50,
+        x3: 10,
+      },
     });
     return flkty;
   },

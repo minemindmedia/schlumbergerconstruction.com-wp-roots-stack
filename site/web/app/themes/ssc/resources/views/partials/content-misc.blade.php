@@ -5,7 +5,6 @@
             <div class="absolute bottom-0 right-0 text-right text-white pr-8 pb-8">
                 <p class="m-0 text-white text-lg lg:text-2.5xl">{{ $name }}</p>
                 <p class="m-0 text-white text-lg lg:text-2.5xl">{{ $location }}</p>
-                <img alt="Down Arrow" src="@asset('images/arrow-next.svg')" class="w-12 mt-8 float-right" />
             </div>
         </div>     
     </div>
