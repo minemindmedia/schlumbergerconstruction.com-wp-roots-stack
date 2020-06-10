@@ -13,9 +13,9 @@
                 </div>
                 <div class="flex-none w-full lg:w-2/3 py-8 lg:py-0 mb-8 lg:mb-0 lg:border-solid lg:border-t-2 lg:border-b-2 lg:border-primary">
                     <div class="flex items-center h-full">
-                        <div class="flex-1 text-center md:px-8">
-                            <h3 class="text-2xl lg:text-4xl mb-8 lg:mb-16">{{ $profile->title }}</h3>
-                            <div class="text-md lg:text-2xl">{!! $profile->content !!}</div>
+                        <div class="flex-1 text-center md:p-8">
+                            <h3 class="text-2xl lg:text-4xl">{{ $profile->title }}</h3>
+                            <p>{!! $profile->content !!}</div>
                         </div>
                     </div>
                 </div>
@@ -29,9 +29,9 @@
                 </div>
                 <div class="flex-none w-full lg:w-2/3 py-8 lg:py-0 mb-8 lg:mb-0 lg:border-solid lg:border-t-2 lg:border-b-2 lg:border-primary">
                     <div class="flex items-center h-full">
-                        <div class="flex-1 text-center md:px-8">
-                            <h3 class="text-2xl lg:text-4xl mb-8 lg:mb-16">{{ $profile->title }}</h3>
-                            <div class="text-md lg:text-2xl">{!! $profile->content !!}</div>
+                        <div class="flex-1 text-center md:p-8">
+                            <h3 class="text-2xl lg:text-4xl">{{ $profile->title }}</h3>
+                            <p>{!! $profile->content !!}</div>
                         </div>
                     </div>
                 </div>

@@ -1,5 +1,4 @@
 import 'alpinejs';
-import jQueryPopupOverlay from 'jquery-popup-overlay';
 import lozad from 'lozad';
 export default {
   init() {
@@ -17,8 +16,6 @@ export default {
   }
   addEventListener('resize', setDocHeight)
   addEventListener('orientationchange', setDocHeight)
-
-  return jQueryPopupOverlay;
 
   },
   finalize() {

@@ -92,6 +92,7 @@ module.exports = {
         "7": "1.75em",
       }),
       padding: theme => ({
+        "8": "32px",
         "20": "48px",
         "52": "120px",
       }),
