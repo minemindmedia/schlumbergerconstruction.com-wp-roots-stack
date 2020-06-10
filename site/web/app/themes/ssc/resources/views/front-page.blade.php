@@ -75,7 +75,7 @@
         </div>
     </div>
 </div>
-<div class="w-full md:w-2/3 mx-auto mb-8 lg:mb-32">
+<div class="w-full mx-auto mb-8 lg:mb-32">
     <div class="carousel bg-transparent" data-flickity='{ "prevNextButtons": false, "adaptiveHeight": true, "wrapAround": true, "autoPlay": true }'>
         @foreach($awards as $award)
             <div class="carousel-cell">

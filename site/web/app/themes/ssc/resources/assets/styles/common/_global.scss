@@ -31,6 +31,14 @@ p {
   line-height: 1.5;
   font-size: 1.25em;
 
+  @include media(">lg") {
+    font-size: 1em;
+  }
+
+  @include media(">xl") {
+    font-size: 1.3em;
+  }
+
   @include media(">xxl") {
     font-size: 1.6875em;
   }
