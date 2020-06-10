@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div class="bg-black h-screen w-full">
+<div class="h-screen w-full">
     @if ( $gallery )
         <div class="carousel"
         data-flickity='{

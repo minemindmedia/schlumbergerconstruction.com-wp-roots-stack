@@ -6,11 +6,6 @@ export default {
     const observer = lozad();
     observer.observe();
 
-    $('#contactModal').popup({
-      transition: '0.2s',
-      scrolllock: true,
-    });
-
     function setDocHeight() {
       document.documentElement.style.setProperty('--vh', `${window.innerHeight/100}px`);
   }
