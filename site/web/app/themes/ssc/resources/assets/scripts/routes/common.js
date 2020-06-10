@@ -1,4 +1,5 @@
 import 'alpinejs';
+import jQueryPopupOverlay from 'jquery-popup-overlay';
 import lozad from 'lozad';
 export default {
   init() {
@@ -6,11 +7,18 @@ export default {
     const observer = lozad();
     observer.observe();
 
+    $('#contactModal').popup({
+      transition: '0.2s',
+      scrolllock: true,
+    });
+
     function setDocHeight() {
       document.documentElement.style.setProperty('--vh', `${window.innerHeight/100}px`);
   }
   addEventListener('resize', setDocHeight)
   addEventListener('orientationchange', setDocHeight)
+
+  return jQueryPopupOverlay;
 
   },
   finalize() {

@@ -186,49 +186,87 @@
 // Contact
 
 form {
+  margin-bottom: 150px !important;
+
   input,
   textarea {
-    background-color: transparent;
-    border-bottom: 2px solid white;
-    margin-bottom: 20px;
-    outline: none;
-    width: 100%;
-    color: white;
-    font-size: 20px;
-    line-height: 46px;
-
-    ::-webkit-input-placeholder { /* WebKit browsers */
-      color: #fff !important;
-      opacity: 1;
-    }
-
-    ::-moz-placeholder { /* Mozilla Firefox 19+ */
-      color: #fff !important;
-      opacity: 1;
-    }
-
-    :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-      color: #fff !important;
-      opacity: 1;
-    }
-
-    :-ms-input-placeholder { /* Internet Explorer 10+ */
-      color: #fff !important;
-      opacity: 1;
-    }
+    background-color: transparent !important;
+    border: none !important;
+    border-bottom: 2px solid white !important;
+    margin-bottom: 20px !important;
+    outline: none !important;
+    width: 100% !important;
+    color: white !important;
+    font-size: 20px !important;
+    line-height: 46px !important;
   }
 
   textarea {
-    height: 50px;
+    height: 50px !important;
   }
 
-  input[type="submit"] {
-    border: none;
-    width: auto;
-    background-color: #fff;
-    color: black;
-    text-transform: uppercase;
-    padding: 0 20px;
-    float: right;
+  button {
+    border: none !important;
+    background-color: #fff !important;
+    text-transform: uppercase !important;
+    padding: 15px 20px !important;
+    float: right !important;
+    color: #7a7a75 !important;
+    font-weight: lighter !important;
+    font-size: 20px !important;
+    display: inline-block !important;
+
+    &::after {
+      display: inline-block;
+      content: "";
+      width: 25px;
+      height: 15px;
+      background: transparent url("../images/submit-arrow.svg") no-repeat;
+      background-size: contain;
+      background-position: center center;
+      margin-left: 15px;
+    }
   }
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+  color: #fff !important;
+  opacity: 1 !important;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: #fff !important;
+  opacity: 1 !important;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: #fff !important;
+  opacity: 1 !important;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+  color: #fff !important;
+  opacity: 1 !important;
+}
+
+span[role="alert"],
+div[role="alert"] {
+  font-size: 16px;
+  color: yellow;
+  border: none;
+  padding: 0;
+  display: block;
+}
+
+.wpcf7-response-output {
+  margin-top: 100px !important;
+  text-align: center;
+}
+
+div.wpcf7 .ajax-loader {
+  background-image: url("../images/spinner.gif");
+  background-size: contain;
+  width: 15px;
+  height: 15px;
+  margin-right: 45px;
 }
