@@ -76,13 +76,13 @@
     </div>
 </div>
 <div class="w-full mx-auto mb-8 lg:mb-32">
-    <div class="carousel bg-transparent" data-flickity='{ "prevNextButtons": false, "adaptiveHeight": true, "wrapAround": true, "autoPlay": true }'>
+    <div class="carousel bg-transparent" data-flickity='{ "prevNextButtons": false, "adaptiveHeight": true, "wrapAround": true }'>
         @foreach($awards as $award)
             <div class="carousel-cell">
                 <div class="flex items-center px-8 lg:px-64">
                     <div class="w-full lg:w-1/3">
                         <a href="{{ $award->link }}" target="_blank">
-                            <img data-src="{{ $award->image->url }}" alt="{{ $award->image->alt }}" class="lozad h-auto">
+                            <img data-src="{{ $award->image->url }}" alt="{{ $award->image->alt }}" class="lozad h-64 md:ml-auto">
                         </a>
                     </div>
                     <div class="w-full lg:w-2/3">
