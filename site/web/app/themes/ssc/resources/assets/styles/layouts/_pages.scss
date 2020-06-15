@@ -67,6 +67,12 @@
   }
 }
 
+body.single-portfolio {
+  .portfolio-carousel {
+    margin-top: 120px;
+  }
+}
+
 /*
 .featured {
   display: flex;
@@ -186,7 +192,7 @@
 // Contact
 
 form {
-  margin-bottom: 150px !important;
+  margin-bottom: 100px !important;
 
   input,
   textarea {

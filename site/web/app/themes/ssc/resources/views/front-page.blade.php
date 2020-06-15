@@ -39,7 +39,7 @@
     <div class="flex-item w-full lg:w-1/2">
         <div class="flex items-center h-full">
             <div class="flex-1">
-                <div class="w-full lg:w-4/5 p-4 lg:mx-auto">
+                <div class="w-90 lg:mx-auto text-md">
                     {!! $intro !!}
             </div>
             </div>
@@ -66,9 +66,9 @@
             <div class="carousel mx-auto  bg-transparent pb-20" data-flickity='{ "prevNextButtons": false, "adaptiveHeight": true, "wrapAround": true }'>
                 @foreach($testimonials as $testimonial)
                     <div class="carousel-cell text-center">
-                        <p>{{ $testimonial->testimonial }}</p>
-                        <p>{{ $testimonial->title }}<br>
-                        {{ $testimonial->subtitle }}</p>
+                        <h4 class="text-2xl">{{ $testimonial->testimonial }}</h4>
+                        <h5 class="text-md">{{ $testimonial->title }}<br>
+                        {{ $testimonial->subtitle }}</h5>
                     </div>
                 @endforeach
             </div>
@@ -79,13 +79,13 @@
     <div class="carousel bg-transparent" data-flickity='{ "prevNextButtons": false, "adaptiveHeight": true, "wrapAround": true }'>
         @foreach($awards as $award)
             <div class="carousel-cell">
-                <div class="flex items-center px-8 lg:px-64">
-                    <div class="w-full lg:w-1/3">
+                <div class="block lg:flex items-center px-8 lg:px-64">
+                    <div class="w-full md:w-1/3">
                         <a href="{{ $award->link }}" target="_blank">
-                            <img data-src="{{ $award->image->url }}" alt="{{ $award->image->alt }}" class="lozad h-64 md:ml-auto">
+                            <img data-src="{{ $award->image->url }}" alt="{{ $award->image->alt }}" class="lozad h-64 mx-auto mb-8 md:ml-auto">
                         </a>
                     </div>
-                    <div class="w-full lg:w-2/3">
+                    <div class="w-full md:w-2/3">
                         <div class="flex-1">
                             <div class="w-full lg:w-4/5 px-4 lg:mx-auto">
                                 <p class="font-medium">{{ $award->title }}</p>

@@ -1,8 +1,8 @@
 @if ( $portfolio->slider )
     <div class="relative pt-52 md:pt-0">
-        <div class="portfolio-carousel bg-black">
+        <div class="portfolio-carousel">
             @foreach( $portfolio->slider as $image )
-            <img data-lazy="{{ $image['sizes']['hero'] }}" alt="{{ $image['alt'] }}"/>
+            <img data-lazy="{{ $image['sizes']['hero'] }}" alt="{{ $image['alt'] }}" class="h-full"/>
             @endforeach
             </div>
         </div>
@@ -18,11 +18,11 @@
         </div>
     </div>
     <div class="flex-1 w-full md:w-1/2">
-        <div class="md:px-16">
-            <p>{{ $portfolio->description }}</p>
+        <div class="md:px-2rem">
+            <p class="text-lg">{{ $portfolio->description }}</p>
             @if ( $portfolio->awards )
             <h4 class="font-bold text-md">Awards:</h4>
-            {!! $portfolio->awards !!}
+            <div style="font-size:18px;">{!! $portfolio->awards !!}</div>
             @endif
         </div>
     </div>

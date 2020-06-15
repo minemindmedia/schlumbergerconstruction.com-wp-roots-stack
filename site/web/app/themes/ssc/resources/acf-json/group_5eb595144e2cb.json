@@ -105,7 +105,7 @@
                     "key": "field_5eb5998bf92ca",
                     "label": "Project Awards",
                     "name": "awards",
-                    "type": "wysiwyg",
+                    "type": "textarea",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -115,10 +115,10 @@
                         "id": ""
                     },
                     "default_value": "",
-                    "tabs": "text",
-                    "media_upload": 0,
-                    "toolbar": "full",
-                    "delay": 0
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": 12,
+                    "new_lines": "br"
                 },
                 {
                     "key": "field_5eb5996cf92c9",
@@ -179,5 +179,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1591304537
+    "modified": 1592262354
 }

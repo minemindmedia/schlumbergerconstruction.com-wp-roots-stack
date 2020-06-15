@@ -1,4 +1,4 @@
-<div class="relative w-full md:w-1/2">
+<div class="relative w-full lg:w-1/2">
     <div class="p-4">
         <a href="{{ get_permalink() }}" title="{{ get_the_title() }}">       
             <div class="absolute top-0 right-0 bottom-0 left-1/2 bg-secondary opacity-20 z-50 m-4 p-4">

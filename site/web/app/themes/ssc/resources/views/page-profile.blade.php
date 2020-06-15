@@ -14,7 +14,7 @@
                 <div class="flex-none w-full lg:w-2/3 py-8 lg:py-0 mb-8 lg:mb-0 lg:border-solid lg:border-t-2 lg:border-b-2 lg:border-primary">
                     <div class="flex items-center h-full">
                         <div class="flex-1 text-center md:p-8">
-                            <h3 class="text-2xl lg:text-4xl">{{ $profile->title }}</h3>
+                            <h3 class="text-2xl text-3xl">{{ $profile->title }}</h3>
                             <p>{!! $profile->content !!}</div>
                         </div>
                     </div>
@@ -30,7 +30,7 @@
                 <div class="flex-none w-full lg:w-2/3 py-8 lg:py-0 mb-8 lg:mb-0 lg:border-solid lg:border-t-2 lg:border-b-2 lg:border-primary">
                     <div class="flex items-center h-full">
                         <div class="flex-1 text-center md:p-8">
-                            <h3 class="text-2xl lg:text-4xl">{{ $profile->title }}</h3>
+                            <h3 class="text-2xl text-3xl">{{ $profile->title }}</h3>
                             <p>{!! $profile->content !!}</div>
                         </div>
                     </div>

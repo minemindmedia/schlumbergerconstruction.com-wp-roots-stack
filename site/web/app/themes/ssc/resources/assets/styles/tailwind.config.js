@@ -87,11 +87,13 @@ module.exports = {
       }),
       width: theme => ({
         "menu": "518px",
+        "90": "90%",
       }),
       margin: theme => ({
         "7": "1.75em",
       }),
       padding: theme => ({
+        "2rem": "2rem",
         "8": "32px",
         "20": "48px",
         "52": "120px",
@@ -103,8 +105,10 @@ module.exports = {
       }),
       fontSize: theme => ({
         'md': '16px',
+        'lg': '18px',
         '2xl': '20px',
         '2.5xl': '23px',
+        '24px': '24px',
         '3xl': '27px',
         '4xl': '33px',
       }),
