@@ -78,6 +78,9 @@ module.exports = {
       '1/2': '50%',
     },
     extend: {
+      screens: theme => ({
+        'xxl': '1600px',
+      }),
       height: theme => ({
         "52": "120px",
         "screen/2": "50vh",
@@ -88,6 +91,7 @@ module.exports = {
       width: theme => ({
         "menu": "518px",
         "90": "90%",
+        "max-w-screen-md": "768px",
       }),
       margin: theme => ({
         "7": "1.75em",
@@ -104,9 +108,11 @@ module.exports = {
         '75': '0.75',
       }),
       fontSize: theme => ({
+        'sm': '12px',
         'md': '16px',
         'lg': '18px',
         '2xl': '20px',
+        '22px': '22px',
         '2.5xl': '23px',
         '24px': '24px',
         '3xl': '27px',

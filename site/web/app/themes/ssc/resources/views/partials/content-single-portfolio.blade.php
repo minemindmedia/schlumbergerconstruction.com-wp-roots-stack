@@ -8,27 +8,30 @@
         </div>
     </div>
 @endif
-<div class="flex flex-wrap m-8 lg:m-20">
-    <div class="flex-none w-full md:w-1/2 mb-4 md:mb-0 border-solid border-t-2 border-b-2 border-black">
-        <div class="flex items-center h-full">
+
+<div class="flex flex-wrap xxl:mx-20 xxl:my-24">
+    <div class="w-full md:w-1/2 pb-4 md:p-4">
+        <div class="flex items-center h-full border-solid border-t-2 border-b-2 border-primary">
             <div class="flex-1 text-center py-4 lg:p-0">
-                <h3>{{ $portfolio->name }}</h3>
-                <h4 class="uppercase">{{ $portfolio->location }}</h4>
+                <h5>{{ $portfolio->name }}</h5>
+                <p class="uppercase">{{ $portfolio->location }}</p>
             </div>
         </div>
     </div>
-    <div class="flex-1 w-full md:w-1/2">
-        <div class="md:px-2rem">
-            <p class="text-lg">{{ $portfolio->description }}</p>
+    <div class="w-full md:w-1/2 pb-4 md:p-4">
+        <div class="px-16">
+            <p class="mb-12">{{ $portfolio->description }}</p>
             @if ( $portfolio->awards )
-            <h4 class="font-bold text-md">Awards:</h4>
-            <div style="font-size:18px;">{!! $portfolio->awards !!}</div>
+            <p class="font-bold">Awards:</p>
+            <p>{!! $portfolio->awards !!}</p>
             @endif
         </div>
     </div>
 </div>
+
+
 @if ( $portfolio->photos )
-    <div class="flex flex-wrap m-8 lg:m-16">
+    <div class="flex flex-wrap xxl:mx-20 xxl:mb-32">
         @foreach( $portfolio->photos as $image )
             <div class="w-full md:w-1/2 pb-4 md:p-4">
                 <img class="lozad" data-src="{{ $image['sizes']['hero'] }}" alt="{{ $image['alt'] }}">

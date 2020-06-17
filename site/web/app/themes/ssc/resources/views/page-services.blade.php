@@ -3,7 +3,7 @@
 @section('content')
 @include('partials.page-header')
 
-<div class="border-solid border-t-2 border-primary mt-8 lg:mt-16 lg:mt-32 mx-8 lg:mx-24"></div>
+<div class="border-solid border-t-2 border-primary mt-8 lg:mt-32 mx-8 lg:mx-24"></div>
    
 @foreach ($our_services as $service)
     @if ($service->block_type == 'content_section')
