@@ -41,15 +41,15 @@
         @endif
     @endforeach
 
-    <h5 class="w-full lg:w-3/5 px-6 lg:mx-auto mb-12 lg:mb-24 text-center leading-normal">
+    <h5 class="w-full lg:max-w-5xl lg:mx-auto mb-12 lg:mb-24 text-center leading-normal">
        {{ $relationship_intro->intro }}
     </h5> 
 
     @if($our_relationships)
-        <div class="block lg:flex mx-8 lg:mx-32 mb-8 lg:mb-32">
+        <div class="block lg:flex mx-8 mb-8 max-w-100 lg:mx-auto lg:mb-32">
             @foreach($our_relationships as $r)
                 <div class="w-full lg:w-1/3">
-                    <p class="mb-6 mt-12 lg:mt-0 font-medium">{!! $r['title'] !!}</p>
+                    <h3 class="mb-6 mt-12 lg:mt-0 font-medium">{!! $r['title'] !!}</h3>
                     <h2 class="leading-normal">{!! $r['list'] !!}</h2>
                 </div>
             @endforeach

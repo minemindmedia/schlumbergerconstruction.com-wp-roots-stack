@@ -82,6 +82,7 @@ module.exports = {
         'xxl': '1600px',
       }),
       height: theme => ({
+        "110px": "110px",
         "52": "120px",
         "screen/2": "50vh",
         "screen/3": "calc(100vh / 3)",
@@ -92,6 +93,9 @@ module.exports = {
         "menu": "518px",
         "90": "90%",
         "max-w-screen-md": "768px",
+      }),
+      maxWidth: theme => ({
+        "100": "1600px",
       }),
       margin: theme => ({
         "7": "1.75em",

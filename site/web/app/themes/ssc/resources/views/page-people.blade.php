@@ -12,7 +12,7 @@
                         <img data-src="{{ $people->image['sizes']['hero'] }}" alt="" class="lozad w-full">
                     </div>
                 </div>
-                <div class="flex-none w-full lg:w-2/3 py-8 lg:py-0 mb-8 lg:mb-0 lg:border-solid lg:border-t-2 lg:border-b-2 lg:border-primary">
+                <div class="flex-none w-full lg:w-2/3 py-8 mb-8 lg:mb-0 lg:border-solid lg:border-t-2 lg:border-b-2 lg:border-primary">
                     <div class="flex items-center h-full">
                         <div class="flex-1 text-center md:px-8">
                             <h5 class="mb-8 lg:mb-16">{{ $people->title }}</h5>
@@ -28,7 +28,7 @@
                         <img data-src="{{ $people->image['sizes']['hero'] }}" alt="" class="lozad w-full">
                     </div>
                 </div>
-                <div class="flex-none w-full lg:w-2/3 py-8 lg:py-0 mb-8 lg:mb-0 lg:border-solid lg:border-t-2 lg:border-b-2 lg:border-primary">
+                <div class="flex-none w-full lg:w-2/3 py-8 mb-8 lg:mb-0 lg:border-solid lg:border-t-2 lg:border-b-2 lg:border-primary">
                     <div class="flex items-center h-full">
                         <div class="flex-1 text-center md:px-8">
                             
@@ -45,7 +45,7 @@
     @endforeach
  
     @if($our_team)
-        <div class="block lg:flex mx-8 lg:mx-64 mb-8 lg:mb-32">
+        <div class="block lg:flex mx-8 max-w-100 lg:mx-auto mb-8 lg:mb-32">
             @foreach($our_team as $t)
                 <div class="w-full lg:w-1/3">
                     <div class="w-1/2 mx-auto text-center lg:text-left">

@@ -66,9 +66,9 @@
             <div class="carousel mx-auto  bg-transparent pb-8" data-flickity='{ "prevNextButtons": false, "adaptiveHeight": true, "wrapAround": true }'>
                 @foreach($testimonials as $testimonial)
                     <div class="carousel-cell text-center">
-                        <h5 class="mb-12 max-w-xl mx-auto">{{ $testimonial->testimonial }}</h5>
+                        <h5 class="mb-12 xxl:max-w-xl mx-auto">{{ $testimonial->testimonial }}</h5>
                         <p class="leading-none">{{ $testimonial->title }}<p>
-                        <p class="leading-none">{{ $testimonial->subtitle }}</p>
+                        <p class="leading-none xl:text-22px">{{ $testimonial->subtitle }}</p>
                     </div>
                 @endforeach
             </div>
@@ -78,7 +78,13 @@
 
 
 
-<div class="lg:max-w-2xl xl:max-w-3xl mx-auto mb-8 lg:mb-32">
+
+
+
+
+<div class="lg:max-w-2xl xl:max-w-3xl mx-auto mb-24 lg:mb-32">
+    <div class="flex items-center h-full ">
+        
     <div class="carousel bg-transparent" data-flickity='{ "prevNextButtons": false, "adaptiveHeight": true, "wrapAround": true }'>
         @foreach($awards as $award)
             <div class="carousel-cell">
@@ -100,6 +106,8 @@
             </div>
         @endforeach
     </div>
+</div>
+
 </div>
 
 
