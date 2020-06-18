@@ -35,7 +35,7 @@
         </div>
     @endif
 </div>
-<div class="flex-container m-4 lg:m-20">
+<div class="flex-container m-4 lg:m-20 lg:my-32">
     <div class="flex-item w-full lg:w-1/2">
         <div class="flex items-center h-full">
             <div class="flex-1">
@@ -53,6 +53,7 @@
                         <div class="absolute bottom-0 right-0 text-right text-white pr-8 pb-8">
                             <h6 class="m-0 text-white">{{ $f->title }}</h6>
                             <h6 class="m-0 text-white">{{ $f->location }}</h6>
+                            <img alt="Down Arrow" src="@asset('images/arrow-next.svg')" class="w-12 mt-8 float-right mb-4" />
                         </div>
                     </div>     
                     {!! $f->thumbnail !!}
