@@ -92,7 +92,7 @@
                     <div class="w-full lg:w-1/2">
                         <div class="flex-1">
                             <div class="w-full px-8 lg:mx-auto text-center lg:text-left">
-                                <p class="font-medium">{{ $award->title }}</p>
+                                <h5 class="font-medium">{{ $award->title }}</h5>
                                 <p>{!! $award->content !!}</p>
                             </div>
                         </div>

@@ -8,7 +8,7 @@
         </div>
         {!! get_search_form(false) !!}
     @endif
-    <div class="block lg:flex flex-wrap flex-row m-4 lg:my-32 lg:mx-16">
+    <div class="block lg:flex flex-wrap flex-row m-8 xl:my-32 xl:mx-16">
         @while (have_posts()) @php the_post() @endphp
             @include('partials.content-'.get_post_type())
         @endwhile
@@ -19,7 +19,7 @@
                         <div class="absolute bottom-0 right-0 text-right text-white pr-8 pb-8">
                             <h6 class="m-0 text-white">Miscellaneous Projects</h6>
                             <h6 class="m-0 text-white">Roaring Fork Valley, CO</h6>
-                            <img alt="Down Arrow" src="@asset('images/arrow-next.svg')" class="w-12 mt-8 float-right" />
+                            <img alt="Down Arrow" src="@asset('images/arrow-next.svg')" class="w-12 mt-8 float-right mb-4" />
                         </div>
                     </div>     
                     <img data-src="@asset('images/misc-placeholder.jpg')" class="lozad">
