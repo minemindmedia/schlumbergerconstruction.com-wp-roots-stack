@@ -69,7 +69,7 @@
                 @foreach($testimonials as $testimonial)
                     <div class="carousel-cell text-center">
                         <h5 class="mb-12 xxl:max-w-xl mx-auto">{{ $testimonial->testimonial }}</h5>
-                        <p class="leading-none">{{ $testimonial->title }}<p>
+                        <p class="leading-none mb-0">{{ $testimonial->title }}<p>
                         <p class="leading-none xl:text-22px">{{ $testimonial->subtitle }}</p>
                     </div>
                 @endforeach
