@@ -52,6 +52,7 @@
                     <div class="absolute top-0 right-0 bottom-0 left-1/2 bg-secondary opacity-20 z-50 m-4 p-4">
                         <div class="absolute bottom-0 right-0 text-right text-white pr-8 pb-8">
                             <h6 class="m-0 text-white">{{ $f->title }}</h6>
+                            <h6 class="m-0 text-white">{{ $f->location }}</h6>
                         </div>
                     </div>     
                     {!! $f->thumbnail !!}
@@ -75,13 +76,6 @@
         </div>
     </div>
 </div>
-
-
-
-
-
-
-
 <div class="lg:max-w-2xl xl:max-w-3xl mx-auto mb-24 lg:mb-32">
     <div class="flex items-center h-full ">
         

@@ -17,18 +17,28 @@ class FrontPage extends Controller
     }
 
     public function featured() {
-    global $post;
-    $data = [];
-    $featured = get_field('featured_portfolios', $post->ID);
-        foreach ($featured as $f) {
-            $this_post = (object) array(
-                'thumbnail' => get_the_post_thumbnail($f, 'hero', array('class' => 'lozad')),
-                'permalink' => get_the_permalink($f),
-                'title' => get_the_title($f),
-            );
-            array_push($data, $this_post);
+        global $post;
+        $data = [];
+        $featured = get_field('featured_portfolios');
+            foreach ($featured as $f) {
+                $post_data = [
+                    'thumbnail' => get_the_post_thumbnail($f, 'hero', array('class' => 'lozad')),
+                    'permalink' => get_the_permalink($f),
+                    'title' => get_the_title($f),
+                ];
+    
+                $field = get_field('portfolio', $f);
+                $portfolio_data = [
+                    'slider'     => $field['slider'] ?? null,
+                    'name'        => $field['name'] ?? null,
+                    'location'     => $field['location'] ?? null,
+                    'description'     => $field['description'] ?? null,
+                    'awards'     => $field['awards'] ?? null,
+                    'photos'     => $field['photos'] ?? null,
+                ];
+                array_push($data, (object) array_merge($post_data, $portfolio_data));
+            }
+            return $data;
         }
-        return $data;
-    }
 
 }
