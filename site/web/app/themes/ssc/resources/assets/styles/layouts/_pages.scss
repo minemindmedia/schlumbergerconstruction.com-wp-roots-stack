@@ -81,25 +81,12 @@
 body.single-portfolio {
   .portfolio-carousel {
     margin-top: 120px;
-  }
-}
 
-/*
-.featured {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-
-  div {
-    flex: 0 50%;
-
-    @include media(">phone", "<=tablet") {
-      flex: 0 100%;
+    @media (min-width: 1024px) {
+      margin-top: 0;
     }
   }
 }
-*/
 
 /* Single Portfolio */
 
@@ -216,6 +203,10 @@ form {
     color: white !important;
     font-size: 20px !important;
     line-height: 46px !important;
+
+    @media only screen and (min-width: 1024px) {
+      font-size: 20px !important;
+    }
   }
 
   textarea {

@@ -14,11 +14,11 @@
             {{ get_theme_mod( 'ssc_subtitle' ) }}
             </h3>
             <a href="tel:{{ get_theme_mod( 'ssc_phone' ) }}" class="text-xl lg:text-3xl text-white">{{ get_theme_mod( 'ssc_phone' ) }}</a>
-            <h5 class="text-white mt-4 mb-16">
+            <h3 class="text-white mt-4 mb-16">
             {{ get_theme_mod( 'ssc_address' ) }}<br>
             {{ get_theme_mod( 'ssc_city' ) }}, {{ get_theme_mod( 'ssc_state' ) }} {{ get_theme_mod( 'ssc_zip' ) }}
-            </h5>
-            <h5 class="copyright text-white">© Schlumberger Scherer Construction</h5>
+            </h3>
+            <h3 class="copyright text-white">© Schlumberger Scherer Construction</h3>
         </div>
     </div>
 </footer>

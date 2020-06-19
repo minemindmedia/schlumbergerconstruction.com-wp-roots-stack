@@ -29,12 +29,7 @@ class FrontPage extends Controller
     
                 $field = get_field('portfolio', $f);
                 $portfolio_data = [
-                    'slider'     => $field['slider'] ?? null,
-                    'name'        => $field['name'] ?? null,
                     'location'     => $field['location'] ?? null,
-                    'description'     => $field['description'] ?? null,
-                    'awards'     => $field['awards'] ?? null,
-                    'photos'     => $field['photos'] ?? null,
                 ];
                 array_push($data, (object) array_merge($post_data, $portfolio_data));
             }

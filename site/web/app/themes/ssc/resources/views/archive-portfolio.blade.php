@@ -8,7 +8,7 @@
         </div>
         {!! get_search_form(false) !!}
     @endif
-    <div class="block lg:flex flex-wrap flex-row m-8 xl:my-32 xl:mx-16">
+    <div class="block lg:flex flex-wrap flex-row m-4 md:m-8 xl:my-32 xl:mx-16">
         @while (have_posts()) @php the_post() @endphp
             @include('partials.content-'.get_post_type())
         @endwhile

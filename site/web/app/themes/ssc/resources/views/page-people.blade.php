@@ -6,7 +6,7 @@
     @foreach ($our_people as $people)
 
         @if ($people->block_type == 'content_section_23_-_13')
-            <div id="go" class="block lg:flex flex-wrap m-12 xl:mx-20 xl:my-32">
+            <div id="go" class="block lg:flex flex-wrap m-8 md:m-12 xl:mx-20 xl:my-32">
                 <div class="flex-1 lg:order-last w-full lg:w-1/3">
                     <div class="lg:pl-12">
                         <img data-src="{{ $people->image['sizes']['hero'] }}" alt="" class="lozad w-full">
@@ -22,7 +22,7 @@
                 </div>
             </div>
         @elseif ($people->block_type == 'content_section_13_-_23')
-            <div class="block lg:flex flex-wrap m-12 xl:mx-20 xl:my-32">
+            <div class="block lg:flex flex-wrap m-8 md:m-12 xl:mx-20 xl:my-32">
                 <div class="flex-1 w-full lg:w-1/3">
                     <div class="lg:pr-12">
                         <img data-src="{{ $people->image['sizes']['hero'] }}" alt="" class="lozad w-full">
@@ -45,11 +45,11 @@
     @endforeach
  
     @if($our_team)
-        <div class="block lg:flex mx-8 max-w-100 lg:mx-auto mb-12 xl:mb-32">
+        <div class="block lg:flex mx-8 lg:max-w-100 lg:mx-auto mb-12 xl:mb-32">
             @foreach($our_team as $t)
                 <div class="w-full lg:w-1/3">
-                    <div class="w-1/2 mx-auto text-center lg:text-left">
-                        <h5 class=" mb-7 mt-12 lg:mt-0 font-medium">{!! $t['title'] !!}</h5>
+                    <div class="lg:w-1/2 mx-auto text-center lg:text-left">
+                        <h3 class=" mb-7 mt-12 lg:mt-0 font-medium">{!! $t['title'] !!}</h3>
                         <div class="leading-normal">{!! $t['list'] !!}</div>
                     </div>
                 </div>

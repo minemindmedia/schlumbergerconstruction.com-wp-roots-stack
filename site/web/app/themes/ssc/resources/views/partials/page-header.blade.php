@@ -5,7 +5,7 @@
                 @if (is_singular())
                 <h1 class="text-white mb-10">{!! App::title() !!}</h1>
                 @elseif (is_archive())
-                <h1 class="text-white mb-10">{{ post_type_archive_title( '', false ) }}</h1>
+                <h1 class="text-white mb-10">Portfolio</h1>
                 @endif
                 <p class="text-white">{{ $page_header->intro }}</p>
                 <a href="#go">
