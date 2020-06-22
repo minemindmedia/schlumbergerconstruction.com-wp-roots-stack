@@ -1,3 +1,5 @@
+/* stylelint-disable */
+
 .flex-container {
   list-style: none;
   -ms-box-orient: horizontal;
@@ -59,25 +61,6 @@
   cursor: pointer;
 }
 
-.portfolio-slide {
-  height: 250px;
-  opacity: 0.25;
-  transition: opacity 250ms ease-out;
-  display: none;
-
-  &.is-selected {
-    opacity: 1;
-  }
-
-  @include media(">sm", "<850px") {
-    height: 480px;
-  }
-
-  @include media(">=850px", "<lg") {
-    height: 600px;
-  }
-}
-
 body.single-portfolio {
   .portfolio-carousel {
     margin-top: 120px;
@@ -88,91 +71,75 @@ body.single-portfolio {
   }
 }
 
-/* Single Portfolio */
+.property-slide {
+  height: 250px;
+  opacity: 0.25;
+  transition: opacity 250ms ease-out;
 
-.slick-slider {
-  .slick-prev,
-  .slick-next {
-    position: absolute;
-    bottom: 0;
-    z-index: 9;
+  &.is-selected {
+    opacity: 1;
   }
 
-  .slick-next {
-    position: absolute;
-    right: 0;
-    font-size: 0;
-
-    &::after {
-      content: "";
-      width: 45px;
-      height: 45px;
-      background: url(../images/arrow-next.svg);
-      background-repeat: no-repeat;
-      top: -100px;
-      right: 7px;
-      position: absolute;
-
-      @media (min-width: 1024px) {
-        right: 34px;
-      }
-    }
+  @media (max-width: 849px) and (min-width: 577px) {
+    height: 480px;
   }
 
-  .slick-prev {
-    position: absolute;
-    left: 0;
-    font-size: 0;
+  @media (max-width: 1024px) and (min-width: 850px) {
+    height: 600px;
+  }
+}
 
-    &::after {
-      content: "";
-      width: 50px;
-      height: 50px;
-      background: url(../images/arrow-prev.svg);
-      background-repeat: no-repeat;
-      top: -100px;
-      left: 7px;
-      position: absolute;
-
-      @media (min-width: 1024px) {
-        left: 34px;
-      }
-    }
+button.previous {
+  position: absolute !important;
+  bottom: 0 !important;
+  height: 100% !important;
+  border-radius: 0 !important;
+  width: 0 !important;
+  
+  svg {
+    display: none;
   }
 
-  .slick-track {
-    img {
-      width: auto;
-      height: 300px;
-      outline: none;
+  &::after {
+    display: block;
+    content: "";
+    width: 50px;
+    height: 50px;
+    background: url(../images/arrow-prev.svg);
+    background-repeat: no-repeat;
+    bottom: 50px;
+    left: 25px !important;
+    position: absolute;
 
-      @media (min-width: 640px) {
-        width: auto;
-        height: 450px;
-      }
-
-      @media (min-width: 768px) {
-        width: auto;
-        height: 550px;
-      }
-
-      @media (min-width: 1024px) {
-        width: auto;
-        height: 800px;
-      }
-
-      @media (min-width: 1280px) {
-        width: auto;
-        height: 100vh;
-      }
+    @media (min-width: 1024px) {
+      left: 34px;
     }
+  }
+}
 
-    img.slick-slide {
-      opacity: 0.2;
-    }
+button.next {
+  position: absolute !important;
+  bottom: 0 !important;
+  height: 100% !important;
+  border-radius: 0 !important;
+  width: 0 !important;
+  
+  svg {
+    display: none;
+  }
 
-    img.slick-active {
-      opacity: 1;
+  &::after {
+    content: "";
+    width: 45px;
+    height: 45px;
+    background: url(../images/arrow-next.svg);
+    background-repeat: no-repeat;
+    bottom: 50px;
+    right: 25px;
+    position: absolute;
+
+    @media (min-width: 1024px) {
+      right: 34px;
     }
   }
 }

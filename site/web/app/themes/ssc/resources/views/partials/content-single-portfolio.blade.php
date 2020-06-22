@@ -1,15 +1,28 @@
 @if ( $portfolio->slider )
     <div class="relative md:pt-0">
-        <div class="portfolio-carousel">
+        <div class="portfolio-carousel"
+            data-flickity='{
+            "wrapAround": true,
+            "lazyLoad": 1,
+            "imagesLoaded": true,
+            "pageDots": false,
+            "cellSelector": ".property-slide",
+            "arrowShape": {
+                "x0": 0,
+                "x1": 80, "y1": 41,
+                "x2": 90, "y2": 40,
+                "x3": 12
+            }
+            }'
+        >
             @foreach( $portfolio->slider as $image )
             <img
-            data-lazy="{{ $image['sizes']['hero'] }}" 
             data-flickity-lazyload="{{ $image['sizes']['large'] }}"
             data-flickity-lazyload-srcset="
             {{ $image['sizes']['hero'] }} 1280w,
             {{ $image['sizes']['large'] }} 1024w"
             sizes="(min-width: 1024px) 1280px, 1024px"
-            alt="{{ $image['alt'] }}" class="h-full"/>
+            alt="{{ $image['alt'] }}" class="property-slide lg:h-screen"/>
             @endforeach
             </div>
         </div>
