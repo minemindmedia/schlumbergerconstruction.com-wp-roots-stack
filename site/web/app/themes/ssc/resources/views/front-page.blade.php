@@ -2,9 +2,9 @@
 
 @section('content')
 
-<div class="h-screen w-full">
+<div class="hero w-full">
     @if ( $gallery )
-        <div class="carousel"
+        <div class="hero carousel"
         data-flickity='{
             "wrapAround": true,
             "lazyLoad": 1,
@@ -21,7 +21,7 @@
           }'
         >
             @foreach( $gallery as $image )
-                <div class="carousel-cell">
+                <div class="hero carousel-cell">
                     <img 
                     data-flickity-lazyload="{{ $image['sizes']['large'] }}"
                     data-flickity-lazyload-srcset="
@@ -29,7 +29,7 @@
                         {{ $image['sizes']['large'] }} 1024w"
                     sizes="(min-width: 1024px) 1280px, 1024px"
                     alt="{{ $image['alt'] }}"
-                    class="carousel-cell-image object-cover h-screen w-full lg:h-screen portfolio-slide" />
+                    class="carousel-cell-image object-cover h-full w-full portfolio-slide" />
                 </div>
             @endforeach
         </div>

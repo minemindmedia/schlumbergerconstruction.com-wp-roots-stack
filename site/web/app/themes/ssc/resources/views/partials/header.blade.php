@@ -62,11 +62,6 @@
                 </ul>
             </div>
         </div>
-
-
-       
-
-        
         <a class="brand" href="{{ home_url('/') }}">
             <img data-src="{{ $image[0] }}" class="lozad float-left lg:float-right h-20 md:h-52 pt-8 pl-8 md:p-6 lg:mr-8 object-left lg:object-right object-fill">
         </a>
