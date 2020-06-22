@@ -38,9 +38,9 @@
 
 
 @if ( $portfolio->photos )
-    <div class="flex flex-wrap m-8 md:m-12 xxl:mx-20 xxl:mb-32">
+    <div class="flex flex-wrap m-8 md:m-12 xxl:mx-20 xxl:mb-32 mb-">
         @foreach( $portfolio->photos as $image )
-            <div class="w-full md:w-1/2 pb-4 md:p-4">
+            <div class="single-photos w-full md:w-1/2 pb-4 md:p-4">
                 <img class="lozad" data-src="{{ $image['sizes']['hero'] }}" alt="{{ $image['alt'] }}">
             </div>
         @endforeach

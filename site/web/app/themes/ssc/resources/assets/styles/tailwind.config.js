@@ -95,6 +95,7 @@ module.exports = {
         "max-w-screen-md": "768px",
       }),
       maxWidth: theme => ({
+        "900px": "900px",
         "100": "1600px",
       }),
       margin: theme => ({

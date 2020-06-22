@@ -10,7 +10,7 @@
         <div class="mx-8 md:mx-12 xl:mx-24">
             <div id="go" class="md:flex">
                 <div class="w-full md:w-1/3 font-normal lg:text-center">
-                    <h3 class="py-8 md:py-12 xl:px-16 xl:py-32">
+                    <h3 class="pt-8 md:py-12 xl:px-16 xl:py-32">
                         {{ $service->title }}
                     </h3>
                 </div>

@@ -45,12 +45,12 @@
     @endforeach
  
     @if($our_team)
-        <div class="block lg:flex mx-8 lg:max-w-100 lg:mx-auto mb-12 xl:mb-32">
+        <div class="block lg:flex mx-8 max-w-100 mx-12 xl:max-w-900px xl:mx-auto mb-12 xl:mb-32">
             @foreach($our_team as $t)
                 <div class="w-full lg:w-1/3">
-                    <div class="lg:w-1/2 mx-auto text-center lg:text-left">
+                    <div class="lg:pl-24 xxl:pl-12 text-center lg:text-left">
                         <h3 class=" mb-7 mt-12 lg:mt-0 font-medium">{!! $t['title'] !!}</h3>
-                        <div class="leading-normal">{!! $t['list'] !!}</div>
+                        <p class="leading-normal">{!! $t['list'] !!}</p>
                     </div>
                 </div>
             @endforeach

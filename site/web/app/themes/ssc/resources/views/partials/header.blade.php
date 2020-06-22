@@ -22,7 +22,7 @@
                     x-show="isHamburgerOpen"
                     x-cloak
                     @click.away="isHamburgerOpen = false"
-                    class="absolute right-0 w-screen md:w-menu h-screen bg-primary text-white list-none text-right pt-48"
+                    class="absolute right-0 w-screen md:w-1/2 lg:w-menu h-screen bg-primary text-white list-none text-right pt-48"
                     style="z-index: -100"
                 >
                     {!! wp_nav_menu([
