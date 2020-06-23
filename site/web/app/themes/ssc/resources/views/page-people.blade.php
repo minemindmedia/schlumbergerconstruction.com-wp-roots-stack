@@ -15,7 +15,7 @@
                 <div class="flex-none w-full lg:w-2/3 py-8 mb-8 lg:mb-0 lg:border-solid lg:border-t-2 lg:border-b-2 lg:border-primary">
                     <div class="flex items-center h-full">
                         <div class="flex-1 text-center md:px-8">
-                            <h5 class="mb-8 lg:mb-16">{{ $people->title }}</h5>
+                            <h5 class="mb-8 lg:mb-8 xl:mb-16">{{ $people->title }}</h5>
                             <p>{!! $people->content !!}</p>
                         </div>
                     </div>
@@ -32,7 +32,7 @@
                     <div class="flex items-center h-full">
                         <div class="flex-1 text-center md:px-8">
                             
-                            <h5 class="mb-8 lg:mb-16">{{ $people->title }}</h5>
+                            <h5 class="mb-8 lg:mb-8 xl:mb-16">{{ $people->title }}</h5>
                             <p>{!! $people->content !!}</p>
                         </div>
                     </div>
