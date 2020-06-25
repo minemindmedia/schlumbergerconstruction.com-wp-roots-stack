@@ -3,6 +3,30 @@
     "title": "Miscellaneous",
     "fields": [
         {
+            "key": "field_5ef500809b227",
+            "label": "Miscellaneous Header",
+            "name": "miscellaneous_header",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "full",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
             "key": "field_5ed551f3dcd04",
             "label": "Miscellaneous Gallery",
             "name": "misc_gallery",
@@ -89,9 +113,9 @@
     "location": [
         [
             {
-                "param": "options_page",
+                "param": "post",
                 "operator": "==",
-                "value": "options_miscellaneous"
+                "value": "298"
             }
         ]
     ],
@@ -110,12 +134,11 @@
         "author",
         "format",
         "page_attributes",
-        "featured_image",
         "categories",
         "tags",
         "send-trackbacks"
     ],
     "active": 1,
     "description": "",
-    "modified": 1591211400
+    "modified": 1593114870
 }

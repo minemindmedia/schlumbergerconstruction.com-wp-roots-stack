@@ -4,8 +4,12 @@ namespace App\Controllers;
 
 use Sober\Controller\Controller;
 
-class PageMisc extends Controller
+class SinglePortfolioMiscellaneous extends Controller
 {
+
+    public function pageHeader() {
+        return get_field( 'miscellaneous_header' );
+    }
 
     public function misc()
     {

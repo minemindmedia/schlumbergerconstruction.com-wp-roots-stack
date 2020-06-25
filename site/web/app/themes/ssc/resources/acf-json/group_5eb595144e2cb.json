@@ -156,6 +156,11 @@
                 "param": "post_type",
                 "operator": "==",
                 "value": "portfolio"
+            },
+            {
+                "param": "post",
+                "operator": "!=",
+                "value": "298"
             }
         ]
     ],
@@ -179,5 +184,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1592262354
+    "modified": 1593114695
 }
