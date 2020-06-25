@@ -27,6 +27,25 @@
             "mime_types": ""
         },
         {
+            "key": "field_5ef50d78b2d17",
+            "label": "Miscellaneous Subtitle",
+            "name": "miscellaneous_subtitle",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_5ed551f3dcd04",
             "label": "Miscellaneous Gallery",
             "name": "misc_gallery",
@@ -140,5 +159,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1593114870
+    "modified": 1593118096
 }
