@@ -9,7 +9,7 @@
             <div id="go" class="block lg:flex flex-wrap m-8 md:m-12 xl:mx-20 xl:my-32">
                 <div class="flex-1 lg:order-last w-full lg:w-1/3">
                     <div class="lg:pl-12">
-                        <img data-src="{{ $people->image['sizes']['hero'] }}" alt="" class="lozad w-full">
+                        <img data-src="{{ $people->image['sizes']['hero'] }}" alt="{{ $people->image['alt'] }}" class="lozad w-full">
                     </div>
                 </div>
                 <div class="flex-none w-full lg:w-2/3 py-8 mb-8 lg:mb-0 lg:border-solid lg:border-t-2 lg:border-b-2 lg:border-primary">
@@ -25,7 +25,7 @@
             <div class="block lg:flex flex-wrap m-8 md:m-12 xl:mx-20 xl:my-32">
                 <div class="flex-1 w-full lg:w-1/3">
                     <div class="lg:pr-12">
-                        <img data-src="{{ $people->image['sizes']['hero'] }}" alt="" class="lozad w-full">
+                        <img data-src="{{ $people->image['sizes']['hero'] }}" alt="{{ $people->image['alt'] }}" class="lozad w-full">
                     </div>
                 </div>
                 <div class="flex-none w-full lg:w-2/3 py-8 mb-8 lg:mb-0 lg:border-solid lg:border-t-2 lg:border-b-2 lg:border-primary">
@@ -39,7 +39,7 @@
                 </div>
             </div>
         @elseif ($people->block_type == 'image_divider')
-            <img data-src="{{ $people->image['sizes']['hero'] }}" alt="" class="lozad w-full my-12 xl:my-32">
+            <img data-src="{{ $people->image['sizes']['hero'] }}" alt="{{ $people->image['alt'] }}" class="lozad w-full my-12 xl:my-32">
         @endif
 
     @endforeach
