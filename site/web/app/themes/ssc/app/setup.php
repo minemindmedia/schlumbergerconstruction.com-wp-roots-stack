@@ -137,6 +137,8 @@ add_action('after_setup_theme', function () {
  * Image Sizes
  */
 add_image_size('hero', 9999, 1280);
+add_image_size( 827, 600, true);
+set_post_thumbnail_size( 827, 600, array( 'center', 'center')  );
 
 /**
  * Add logo to customizer

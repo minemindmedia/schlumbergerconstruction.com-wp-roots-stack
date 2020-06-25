@@ -22,7 +22,7 @@ class FrontPage extends Controller
         $featured = get_field('featured_portfolios');
             foreach ($featured as $f) {
                 $post_data = [
-                    'thumbnail' => get_the_post_thumbnail($f, 'hero', array('class' => 'lozad')),
+                    'thumbnail' => get_the_post_thumbnail($f, 'hero', array('class' => 'w-full')),
                     'permalink' => get_the_permalink($f),
                     'title' => get_the_title($f),
                 ];

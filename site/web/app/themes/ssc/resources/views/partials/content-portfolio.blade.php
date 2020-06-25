@@ -8,7 +8,7 @@
                     <img alt="Down Arrow" src="@asset('images/arrow-next.svg')" class="w-12 mt-8 float-right" />
                 </div>
             </div>     
-            <img src="{!! the_post_thumbnail_url() !!}">
+            <img data-src="{!! the_post_thumbnail_url() !!}" class="lozad w-full">
         </a>
     </div>
 </div>
