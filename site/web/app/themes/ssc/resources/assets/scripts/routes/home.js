@@ -8,6 +8,8 @@ export default {
       lazyLoad: true,
       contain: true,
       pageDots: false,
+      autoPlay: true,
+      pauseAutoPlayOnHover: false,
       arrowShape: { 
         x0: 5,
         x1: 75, y1: 65,

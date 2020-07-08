@@ -7,6 +7,8 @@
             "imagesLoaded": true,
             "pageDots": false,
             "cellSelector": ".property-slide",
+            "autoPlay": true,
+            "pauseAutoPlayOnHover": false,
             "arrowShape": {
                 "x0": 0,
                 "x1": 80, "y1": 41,

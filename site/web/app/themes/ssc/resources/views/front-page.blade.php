@@ -9,7 +9,6 @@
             "wrapAround": true,
             "lazyLoad": 1,
             "imagesLoaded": true,
-            "initialIndex": 2,
             "pageDots": false,
             "cellSelector": ".property-slide",
             "arrowShape": {
@@ -65,7 +64,7 @@
 <div class="w-full md:max-w-6xl mx-auto border-solid border-t-2 border-b-2 border-primary mb-12 xl:mb-24 pb-20">
     <div class="flex items-center h-full ">
         <div class="flex-1 my-8 px-8 xl:my-20">
-            <div class="carousel mx-auto  bg-transparent pb-8" data-flickity='{ "prevNextButtons": false, "adaptiveHeight": true, "wrapAround": true }'>
+            <div class="carousel mx-auto  bg-transparent pb-8" data-flickity='{ "prevNextButtons": false, "adaptiveHeight": true, "wrapAround": true, "autoPlay": true }'>
                 @foreach($testimonials as $testimonial)
                     <div class="carousel-cell text-center">
                         <h3 class="mb-12 xxl:max-w-xl mx-auto">{{ $testimonial->testimonial }}</h3>
@@ -80,7 +79,7 @@
 <div class="lg:max-w-2xl xl:max-w-3xl mx-auto mb-24 xl:mb-32">
     <div class="flex items-center h-full ">
         
-    <div class="carousel bg-transparent" data-flickity='{ "prevNextButtons": false, "adaptiveHeight": true, "wrapAround": true }'>
+    <div class="carousel bg-transparent" data-flickity='{ "prevNextButtons": false, "adaptiveHeight": true, "wrapAround": true, "autoPlay": true }'>
         @foreach($awards as $award)
             <div class="carousel-cell">
                 <div class="block lg:flex items-center">
