@@ -1,3 +1,22 @@
+.sticky {
+  position: fixed !important;
+  opacity: 0.85;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-duration: 1s;
+}
+
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0.85;
+  }
+}
+
 .hero {
   height: calc(100vh - 120px);
 

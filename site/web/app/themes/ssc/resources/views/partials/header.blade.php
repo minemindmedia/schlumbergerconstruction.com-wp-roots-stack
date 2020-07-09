@@ -43,7 +43,7 @@
                             x-show="isContactOpen"
                             x-cloak
                             @click.away="isContactOpen = false"
-                            class="absolute top-0 right-0 w-screen sm:w-menu  h-screen bg-primary text-white list-none text-right pt-32"
+                            class="absolute top-0 right-0 w-screen sm:w-menu  h-screen bg-contact text-white list-none text-right pt-32"
                             style="z-index: 9999"
                         >
                             <div class="p-8 lg:px-16 py-0">

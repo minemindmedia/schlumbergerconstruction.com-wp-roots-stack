@@ -51,6 +51,7 @@ module.exports = {
     colors: {
       primary: 'rgba(122,122,117, 0.85)',
       secondary: 'rgba(122,122,117, 0.65)',
+      contact: 'rgba(122,122,117)',
       white: '#fff',
       gray: {
         100: '#f7fafc',
