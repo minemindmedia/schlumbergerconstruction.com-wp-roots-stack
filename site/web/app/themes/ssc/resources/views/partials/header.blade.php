@@ -1,4 +1,4 @@
-<header class="absolute h-52 w-full bg-primary z-50">
+<header class="absolute h-16 md:h-52 w-full bg-primary z-50">
     @php 
         $custom_logo_id = get_theme_mod( 'custom_logo' );
         $image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
@@ -12,7 +12,7 @@
                 <button
                 type="button"
                 title="Open the actions menu"
-                class="hamburger float-right h-52 p-20 object-right object-fill mr-6"
+                class="hamburger float-right h-16 md:h-52 p-4 md:p-20 object-right object-fill mr-6"
                 style="z-index: 99999999999999"
                 @click="isHamburgerOpen = true"
                 :class="{ 'menu-close': isHamburgerOpen }"
@@ -43,8 +43,9 @@
                             x-show="isContactOpen"
                             x-cloak
                             @click.away="isContactOpen = false"
-                            class="absolute top-0 right-0 w-screen sm:w-menu  h-screen bg-contact text-white list-none text-right pt-32"
+                            class="absolute top-0 right-0 w-screen sm:w-menu  h-screen text-white list-none text-right pt-32 contact-color"
                             style="z-index: 9999"
+                            id="contact"
                         >
                             <div class="p-8 lg:px-16 py-0">
                                 @php echo do_shortcode('[contact-form-7 id="67" title="Contact Form"]') @endphp
@@ -63,7 +64,7 @@
             </div>
         </div>
         <a class="brand" href="{{ home_url('/') }}">
-            <img data-src="{{ $image[0] }}" class="lozad float-left lg:float-right h-20 md:h-52 pt-8 pl-8 md:p-6 lg:mr-8 object-left lg:object-right object-fill">
+            <img data-src="{{ $image[0] }}" class="lozad float-left lg:float-right h-12 md:h-52 pt-4 md:pt-8 pl-8 md:p-6 lg:mr-8 object-left lg:object-right object-fill">
         </a>
     </div>   
 </header>

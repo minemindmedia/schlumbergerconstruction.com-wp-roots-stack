@@ -1,6 +1,5 @@
 .sticky {
   position: fixed !important;
-  opacity: 0.85;
   animation-name: fadeInOpacity;
   animation-iteration-count: 1;
   animation-timing-function: ease-in-out;
@@ -13,8 +12,13 @@
   }
 
   100% {
-    opacity: 0.85;
+    opacity: 1;
   }
+}
+
+.contact-color {
+  background-color: rgba(122, 122, 117, 1) !important;
+  opacity: 1 !important;
 }
 
 .hero {
